@@ -17,3 +17,6 @@
 # Temporary and log files
 *.log
 *.tmp
+
+# Local database credentials
+db.properties

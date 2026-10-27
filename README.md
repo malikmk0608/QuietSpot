@@ -43,12 +43,14 @@ QuietSpot is a Java console application that enables students and campus members
    ```
 
 3. Configure your database credentials:
-   - By default, `DatabaseConnection.java` connects to `jdbc:mysql://localhost:3306/quietspot`.
-   - Set the environment variables `DB_USER` and `DB_PASSWORD` or edit `DatabaseConnection.java` with your MySQL credentials:
-     ```bash
-     export DB_USER="root"
-     export DB_PASSWORD="your_mysql_password"
+   - Copy `db.properties.example` to `db.properties` and add your password:
+     ```properties
+     db.url=jdbc:mysql://localhost:3306/quietspot
+     db.user=root
+     db.password=your_mysql_password
      ```
+   - *(Note: `db.properties` is listed in `.gitignore`, so your password is never committed to GitHub).*
+   - Alternatively, you can use environment variables (`DB_USER`, `DB_PASSWORD`).
 
 ---
 
