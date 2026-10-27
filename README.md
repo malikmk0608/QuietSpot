@@ -49,7 +49,6 @@ QuietSpot is a Java console application that enables students and campus members
      db.user=root
      db.password=your_mysql_password
      ```
-   - *(Note: `db.properties` is listed in `.gitignore`, so your password is never committed to GitHub).*
    - Alternatively, you can use environment variables (`DB_USER`, `DB_PASSWORD`).
 
 ---
